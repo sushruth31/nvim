@@ -21,6 +21,7 @@ return {
       builtin.grep_string({ search = vim.fn.input("Grep > ") })
     end)
     vim.keymap.set('n', '<leader>gs', builtin.live_grep, {})
+    vim.keymap.set('n', '<leader>h', builtin.oldfiles, {})
     vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
   end
 }
